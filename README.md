@@ -1,6 +1,5 @@
 # Trexpack
-
-
+[![Known Vulnerabilities](https://snyk.io/test/github/quintenkasteel/trexpack/badge.svg?targetFile=package.json)](https://snyk.io/test/github/quintenkasteel/trexpack?targetFile=package.json)
 
 ## Installation
 

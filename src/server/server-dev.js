@@ -16,6 +16,10 @@ app.use(webpackDevMiddleware(compiler, {
 
 app.use(webpackHotMiddleware(compiler))
 
+app.get('/api', function (req, res) {
+  res.send('API!')
+})
+
 app.get('*', (req, res, next) => {
   compiler.outputFileSystem.readFile(HTML_FILE, (err, result) => {
   if (err) {
@@ -26,6 +30,8 @@ app.get('*', (req, res, next) => {
   res.end()
   })
 })
+
+
 
 const PORT = process.env.PORT || 8080
 
